@@ -26,3 +26,5 @@ python login_test.py
 
 Run the attendance tests:
 python attendance_test.py
+
+Maintained by the AttendX QA team. 

@@ -17,6 +17,12 @@ class LoginTest(unittest.TestCase):
             "Login successful"
         )
 
+    def test_empty_username(self):
+        self.assertEqual(
+            login("", "pass123"),
+            "Username and password required"
+        )
+
     def test_wrong_password(self):
         self.assertEqual(
             login("student", "wrong"),
@@ -32,3 +38,4 @@ class LoginTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
